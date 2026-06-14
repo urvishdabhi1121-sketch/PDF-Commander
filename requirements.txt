@@ -1,0 +1,26 @@
+# PDF-Commander — Dependency Manifest
+# Install with: pip install -r requirements.txt
+
+# --- Core PDF Manipulation ---
+pypdf>=4.0.0          # Merge, split, rotate, extract text, encrypt/decrypt
+
+# --- Advanced Security & Repair ---
+pikepdf>=8.0.0        # AES encryption, password removal, PDF/A compliance
+
+# --- Text & Table Extraction ---
+pdfplumber>=0.10.0    # Structured text + table extraction with layout awareness
+
+# --- Format Conversion ---
+pdf2docx>=0.5.6       # PDF  →  Word (.docx)
+docx2pdf>=0.1.8       # Word (.docx)  →  PDF  (requires LibreOffice on Linux/Mac)
+
+# --- PDF Creation ---
+reportlab>=4.0.0      # Programmatic PDF generation (used by watermark module)
+
+# --- OCR Support (optional but included) ---
+pdf2image>=1.16.0     # Converts PDF pages to images for OCR
+pytesseract>=0.3.10   # OCR engine wrapper (requires Tesseract binary installed)
+
+# --- Utility ---
+rich>=13.0.0          # Beautiful terminal output — menus, tables, progress bars
+click>=8.1.0          # Robust CLI argument parsing (used internally by modules)
